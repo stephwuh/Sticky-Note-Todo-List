@@ -1,0 +1,17 @@
+[
+  {
+    "title": "House Chores",
+    "body": " wash dishes, laundry, clean bathroom, vacuum",
+    "id": 1
+  },
+  {
+    "title": "Exercise (Chest/Back Day)",
+    "body": "Benchpress/wide pull-ups, incline dumbbell benchpress / bent over barbell row, chest dips / close-grip lat pull down, cable flys",
+    "id": 2
+  },
+  {
+    "title": "Grocery Shopping",
+    "body": "Oatmeal bread, chicken breasts, sirloin steak, orange juice, greek yogurt, granola, blue berries",
+    "id": 3
+  }
+]
