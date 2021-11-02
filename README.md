@@ -4,6 +4,8 @@
 This slightly more advanced version of a to-do list allows users to create, save,
 and delete to-do items in the form of sticky notes.
 
+<img src="https://user-images.githubusercontent.com/56822167/139854291-4448d167-45fd-4c30-a3b0-c44eb9e0af2a.PNG" alt="screen shot" width=" 350"/>
+
 
 ## Tech Stack
 
