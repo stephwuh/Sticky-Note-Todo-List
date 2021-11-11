@@ -15,13 +15,13 @@ app.post('/api/list/create', ctrl.createList)
 app.delete('/api/list/deleteSaved', ctrl.deleteSaved)
 app.post('/api/list/saveAll', ctrl.saveAll)
 
-app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname+ '/client/build/index.html'));
-  });
+// app.get('*', (req, res) => {
+//     res.sendFile(path.join(__dirname+ '/client/build/index.html'));
+//   });
 
 
 //port info
-const port = process.env.PORT || 5050
+const port = process.env.PORT || 3001;
 app.listen(port, () => {
     console.log(`listening on port ${port}`)
 })
