@@ -64,6 +64,7 @@ section {
     /* margin-left: 100px; */
     overflow: auto;
     font-family: 'Neucha', cursive;
+    list-style-type: square;
 }
 li {
   display: inline-flex;
