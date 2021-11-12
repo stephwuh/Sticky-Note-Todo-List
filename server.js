@@ -7,7 +7,8 @@ const path = require('path');
 //middleware
 app.use(cors())
 app.use(express.json())
-app.use(express.static('client')));
+// app.use(express.static(path.join(__dirname, 'client/build')));
+app.use(express.static(path.join(__dirname, 'client')));
 
 //endpoints
 app.get('/api/list', ctrl.getList)
@@ -21,7 +22,7 @@ app.post('/api/list/saveAll', ctrl.saveAll)
 
 
 //port info
-const port = process.env.PORT || 3001;
+const port = process.env.PORT || 5500;
 app.listen(port, () => {
     console.log(`listening on port ${port}`)
 })

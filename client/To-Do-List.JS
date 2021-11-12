@@ -26,7 +26,7 @@ toDoButton.addEventListener('mouseout', btnColorReturn)
 
 function getData(e){
     e.preventDefault();
-    axios.get('http://localhost:5050/api/list')
+    axios.get('/api/list')
     .then(function(res){
       
         for (let i=0; i < res.data.length; i++) {
@@ -118,7 +118,7 @@ function postData(evnt){
     for (let i=1; i< evnt.target.parentNode.previousSibling.childNodes.length; i++){
         body += ` ${evnt.target.parentNode.previousSibling.childNodes[i].textContent}`;
     }
-    axios.post('http://localhost:5050/api/list/create', {
+    axios.post('/api/list/create', {
       'title': `${evnt.target.parentNode.previousSibling.childNodes[0].textContent}`,
       'body': body
     })
@@ -133,7 +133,7 @@ function postData(evnt){
 // Delete All Button
 function deleteSaved(){
     // evnt.preventDefault();
-    axios.delete('http://localhost:5050/api/list/deleteSaved')
+    axios.delete('/api/list/deleteSaved')
     .then(function(res){
         alert(res.data)
     })
@@ -153,7 +153,7 @@ function saveAll(evnt){
         for(let j=1; j < liList[i].childNodes[0].childNodes.length; j++){
             body += ` ${liList[i].childNodes[0].childNodes[j].textContent}`
         }
-        axios.post('http://localhost:5050/api/list/saveAll', {
+        axios.post('/api/list/saveAll', {
         'title': `${liList[i].childNodes[0].childNodes[0].textContent}`,
         'body' : body
         })
