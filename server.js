@@ -16,9 +16,9 @@ app.post('/api/list/create', ctrl.createList)
 app.delete('/api/list/deleteSaved', ctrl.deleteSaved)
 app.post('/api/list/saveAll', ctrl.saveAll)
 
-// app.get('/', (req, res) => {
-//     res.sendFile(path.join(__dirname+ '/client/build/index.html'));
-//   });
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname+ '/client/To-Do-List.html'));
+  });
 
 
 //port info
